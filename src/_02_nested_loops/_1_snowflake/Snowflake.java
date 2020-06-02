@@ -35,7 +35,7 @@ public class Snowflake {
 			robot.turn(60);
 			
 			// #12. set the pen color to blue for even numbers of i
-			if(i==2||i==4||i==6) {
+			if(i==0||i==2||i==4) {
 				robot.setPenColor(Color.blue);
 			}
 			// #13. set the pen color to red for all odd numbers of i
@@ -44,10 +44,10 @@ public class Snowflake {
 			}
 			
 			// #9. Use a for loop to do everything (#10, #11) 6 times ( use j as a counter )
-					for(int j = 0;j<6;i++) {
+					for(int j = 0;j<6;j++) {
 			
 					// #10. turn the robot to the left by 60
-						robot.turn(300);
+						robot.turn(-60);
 					
 					// #11. move the robot by 50 (play the start button)
 						robot.move(50);
